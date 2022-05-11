@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="function.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body onload="changeText()" class="bg-gray">
+    <div id="header" class="flex-col justify-center items-center bg-beige">
+        <div id="menu-container" class="flex justify-center">
+            <img src="assets/logo.png" alt="Logo Happy Naps" class="p-2 w-2/4">
+        </div>
+        <div id="usp-container" class="flex justify-center bg-light-beige text-brown font-semibold">
+            <h5 id="change" class="p-2"></h5>
+            <!-- Gratis verzending boven de 99,- -->
+        </div>
+    </div>
+
+    <div id="content-container" class="bg-white m-5">
+        <div id="head-container" class="flex flex-col justify-center items-center p-4">
+            <div id="titel-container" class="justify-center">
+                <h1 class="text-dark-brown flex text-2xl font-bold">Bedankt voor je bestelling</h1>
+                <p class="text-light-gray flex justify-center items-center">Je bestelnummer is 000000012</p>
+            </div>
+            <p class="text-light-gray mt-6">Beste Thomas, we wensen je veel plezier met je bestelling! Wij gaan direct voor je aan de slag. Je ontvangt snel een e-mail op thomas@nodots.nl met alle details van je bestelling.
+            </p>
+        </div>
+        <div class="py-4">
+            <div class="w-12/12 mr-5 ml-5 border-t border-border-gray"></div>
+        </div>
+        <div id="items-container" class="">
+            <div id="item" class="flex gap-1">
+                <div class="img-container ">
+                    <img class=" ml-3 bg-beige w-10 h-10" src="assets/location.png" alt="location">
+                </div>
+                <p class="ml-5">Het bezorgadres is Klokgebouw 168, 5617 AB, Eindhoven</p>
+            </div>
+            <div id="items" class="flex gap-1">
+                <div class="img-container ">
+                    <img class="ml-3 mt-2 bg-beige w-10 h-10" src="assets/mail.png" alt="mail">
+                </div>
+                <p class="ml-5 mt-2">We sturen een bevestiging per e-mail naar thomas@nodots.nl</p>
+            </div>
+            <div id="item" class="flex gap-1">
+                <div class="img-container ">
+                    <img class="ml-3 mt-2 bg-beige w-10 h-10 w-/12/12" src="assets/costumer-service.png" alt="costumer-service">
+                </div>
+                <p class="ml-3 mt-2">Heb je nog vragen? Bezoek onze <span><a href=""
+                            class="underline text-link-brown">klantenservice</a></span></p>
+            </div>
+        </div>
+
+        <div class="py-4">
+            <div class="w-12/12 mr-5 ml-5 border-t border-border-gray"></div>
+        </div>
+
+        <div id="card-head-container" class="flex flex-col justify-center items-center p-4 gap-5">
+            <div id="text-container" class=" flex flex-col">
+                <p class="text-dark-brown flex text-center justify-center items-center  text-2xl font-bold">Advies & inspiratie
+                </p>
+                <p class="text-light-gray flex text-center ">Ontdek handige tips, de laatste trends en de leukste DIY’s
+                </p>
+            </div>
+            <div id="card-container" class="flex flex-row justify-center">
+                <!-- card 1 -->
+                <div id="card-article" class="flex flex-col flex-nowrap mr-3 align-right  ">
+                    <div id="img-container">
+                        <img src="assets/Wetbag.png" alt="wetbag">
+                    </div>
+                    <div id="description" class="bg-beige p-3">
+                        <div id="category">
+                            <p class="text-brown font-semibold">Tips & Tricks <span class="text-xs text-brown">&#9679;</span><span id="date"> 17 november
+                                    2021</span></p>
+                        </div>
+                        <div id="text-container">
+                            <h2 class="text-dark-brown font-bold">Met een wetbag kun je ook op pad</h2>
+                            <p class="text-link-brown">A malesuada sollicitudin eu mattis proin suscipit amet malesuada. Pellentesque dolor, praesent nulla tristique pellentesque. Nec, sollicitudin bibendum molestie leo, lectus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div id="card-article" class="flex flex-col   mr-3">
+                    <div id="img-container">
+                        <img src="assets/baby.png" alt="wetbag">
+                    </div>
+                    <div id="description" class="bg-beige p-3">
+                        <div id="category">
+                            <p class="text-brown font-semibold">Tips & Tricks <span class="text-xs text-brown">&#9679;</span><span id="date"> 17 november
+                                    2021</span></p>
+                        </div>
+                        <div id="text-container">
+                            <h2 class="text-dark-brown font-bold">Met een wetbag kun je ook op pad</h2>
+                            <p class="text-link-brown">A malesuada sollicitudin eu mattis proin suscipit amet malesuada. Pellentesque dolor, praesent nulla tristique pellentesque. Nec, sollicitudin bibendum molestie leo, lectus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="p-5">
+        <div id="news-letter" class="">
+            <h4 class="text-dark-brown">Happy Naps</h4>
+            <p class="text-brown">Speciaal voor de meest bijzondere kleine wezentjes op aarde, hebben wij de allerfijnste wasbare nappies ontworpen. Happy Naps zijn super gemakkelijk in gebruik en gemaakt van alleen de best werkende materialen.</p>
+        </div>
+        <div class="links">
+            <div class="py-4">
+                <div class="w-12/12 mr-3 ml-3 border-t border-border-gray"></div>
+            </div>
+            <p class="text-dark-brown text-center"><a href="">Shop</a> </p>
+            <div class="py-4">
+                <div class="w-12/12 mr-3 ml-3 border-t border-border-gray"></div>
+            </div>
+            <p class="text-dark-brown text-center"><a href="">Hulp & Advies</a> </p>
+
+            <div class="py-4">
+                <div class="w-12/12 mr-3 ml-3 border-t border-border-gray"></div>
+            </div>
+            <p class="text-dark-brown text-center"><a href="">Snel regelen</a> </p>
+
+            <div class="py-4">
+                <div class="w-12/12 mr-3 ml-3 border-t border-border-gray"></div>
+            </div>
+            <p class="text-dark-brown text-center"><a href="">Over ons</a> </p>
+
+            <div class="py-4">
+                <div class="w-12/12 mr-3 ml-3 border-t border-border-gray"></div>
+            </div>
+            <p class="text-dark-brown text-left"> &copy; Happy Naps – 2021</p>
+
+        </div>
+
+
+
+    </footer>
+
+</body>
+
+</html>
+<p class="text-dark-brown text-center"><a href="">Over ons</a> </p>
+
+<div class="py-4">
+    <div class="w-12/12 mr-3 ml-3 border-t border-border-gray"></div>
+</div>
+<p class="text-dark-brown text-left"> &copy; Happy Naps – 2021</p>
+
+</div>
+
+
+
+</footer>
+
+</body>
+
+</html>
