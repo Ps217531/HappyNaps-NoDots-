@@ -17,6 +17,12 @@ module.exports = {
 
             width: {
                 '100': '300px',
+                '300': '100%',
+                '400': '400px',
+            },
+            gap: {
+
+                '400': '400px',
             },
             gridTemplateColumns: {
                 // Simple 16 column grid
