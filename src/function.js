@@ -1,27 +1,13 @@
-//https://stackoverflow.com/questions/48138979/how-to-change-text-every-5-seconds
-var texts = new Array();
-texts.push("Gratis verzending boven de 90,-");
-texts.push("Betaal in 3 termijnen");
-texts.push("Binnen 24 uur verstuurd");
-
-change = document.getElementById("change");
-
-var point = 0;
-console.log(texts);
-
+//blog.stackfindover.com/how-to-change-text-every-3-seconds/var texts = new Array();
 
 function changeText() {
 
-    $("h5").html(texts[point]);
-    if (point < texts.length - 1) {
-        point++;
-
-    } else {
-        point = 0;
-    }
-    change = texts;
-    setTimeout(changeText, 5000);
-
+    var header = ["Gratis verzending boven de 90,-", "Betaal in 3 termijnen", "Binnen 24 uur verstuurd!"],
+        i = 0;
+    setInterval(function() {
+        $('#change').fadeOut(function() {
+            $(this).html(header[(i = (i + 1) % header.length)]).fadeIn();
+        });
+    }, 5000)
 }
-
 changeText();

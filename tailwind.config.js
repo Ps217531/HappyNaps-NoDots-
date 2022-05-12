@@ -13,7 +13,9 @@ module.exports = {
                 'light-gray': '#7F7168',
                 'border-gray': '#DCD9D5',
                 'link-brown': '#B76F33',
+                'hr-footer-brown': '#E4BE9F',
             },
+
 
             width: {
                 '100': '300px',
@@ -28,9 +30,16 @@ module.exports = {
                 // Simple 16 column grid
                 '16': 'repeat(2, minmax(3, 1fr))',
 
+            },
+            fontFamily: {
+                'sans': 'DM Sans',
+
 
             }
+
         }
+
+
     },
     plugins: [],
 }

@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <script src="function.js"></script>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
-<body onload="changeText()" class="bg-gray">
+<body onload="changeText()" class="bg-gray font-sans">
     <div id="header" class="flex-col justify-center items-center bg-beige">
         <div id="menu-container" class="flex justify-center">
             <img src="assets/logo.png" alt="Logo Happy Naps" class="p-2 w-2/4">
         </div>
         <div id="usp-container" class="flex justify-center bg-light-beige text-brown font-semibold">
-            <h5 id="change" class="p-2"></h5>
-            <!-- Gratis verzending boven de 99,- -->
+            <h5 id="change" class="p-2">Gratis verzending boven de 90,-</h5>
         </div>
     </div>
 
-    <div id="content-container" class="bg-white m-5">
+    <div id="content-container" class="bg-white m-5 rounded-lg">
         <div id="head-container" class="flex flex-col justify-center items-center p-4">
             <div id="titel-container" class="justify-center">
                 <h1 class="text-dark-brown flex text-2xl font-bold">Bedankt voor je bestelling</h1>
@@ -35,19 +36,19 @@
         <div id="items-container" class="">
             <div id="item" class="flex gap-1">
                 <div class="img-container ">
-                    <img class=" ml-3 bg-beige w-10 h-10" src="assets/location.png" alt="location">
+                    <img class=" ml-3 bg-beige w-10 h-10 rounded-md" src="assets/location.png" alt="location">
                 </div>
                 <p class="ml-5">Het bezorgadres is Klokgebouw 168, 5617 AB, Eindhoven</p>
             </div>
             <div id="items" class="flex gap-1">
                 <div class="img-container ">
-                    <img class="ml-3 mt-2 bg-beige w-10 h-10" src="assets/mail.png" alt="mail">
+                    <img class="ml-3 mt-2 bg-beige w-10 h-10 rounded-md" src="assets/mail.png" alt="mail">
                 </div>
                 <p class="ml-5 mt-2">We sturen een bevestiging per e-mail naar thomas@nodots.nl</p>
             </div>
             <div id="item" class="flex gap-1">
                 <div class="img-container ">
-                    <img class="ml-3 mt-2 bg-beige w-10 h-10 w-/12/12" src="assets/costumer-service.png" alt="costumer-service">
+                    <img class="ml-3 mt-2 bg-beige w-10 h-10 w-/12/12 rounded-md" src="assets/costumer-service.png" alt="costumer-service">
                 </div>
                 <p class="ml-3 mt-2">Heb je nog vragen? Bezoek onze <span><a href=""
                             class="underline text-link-brown">klantenservice</a></span></p>
@@ -65,13 +66,16 @@
                 <p class="text-light-gray flex text-center ">Ontdek handige tips, de laatste trends en de leukste DIY’s
                 </p>
             </div>
-            <div id="card-container" class="grid grid-cols-2 gap-80 overflow-y-hidden">
+            <div id="card-container" class="grid grid-cols-3 gap-80 overflow-y-hidden w-100">
                 <!-- card 1 -->
-                <div id="card-article" class="flex flex-col flex-nowrap align-right w-100 ">
+                <div id="card-article1" class="flex flex-col flex-nowrap align-right w-100">
+                    <!-- <div class="absolute">
+                        <img src="" alt="delete">
+                    </div> -->
                     <div id="img-container">
-                        <img src="assets/Wetbag.png" alt="wetbag">
+                        <img src="assets/Wetbag.png" id="wetba" alt="wetbag">
                     </div>
-                    <div id="description" class="bg-beige p-6">
+                    <div id="description" class="bg-beige p-6 rounded-b-lg">
                         <div id="category">
                             <p class="text-brown font-semibold">Tips & Tricks <span class="text-xs text-brown">&#9679;</span><span id="date"> 17 november
                                     2021</span></p>
@@ -83,24 +87,43 @@
                         </div>
                     </div>
                 </div>
+
+
                 <!-- card 2 -->
-                <div id="card-article" class="flex flex-col  w-100">
+                <div id="card-article2" class="flex flex-col  w-100">
                     <div id="img-container">
-                        <img src="assets/baby.png" alt="wetbag">
+                        <img src="assets/baby.png" id="img-baby" alt="wetbag">
                     </div>
-                    <div id="description" class="bg-beige p-6">
+                    <div id="description" class="bg-beige p-6 rounded-b-lg">
                         <div id="category">
-                            <p class="text-brown font-semibold">Tips & Tricks <span class="text-xs text-brown">&#9679;</span><span id="date"> 17 november
+                            <p class="text-brown font-semibold">Tips & Tricks <span class="text-xs text-brown">&#9679;</span><span id="date"> 11 november 2021
                                     2021</span></p>
                         </div>
                         <div id="text-container">
-                            <h2 class="text-dark-brown font-bold">Met een wetbag kun je ook op pad</h2>
-                            <p class="text-link-brown">A malesuada sollicitudin eu mattis proin suscipit amet malesuada. Pellentesque dolor, praesent nulla tristique pellentesque. Nec, sollicitudin bibendum molestie leo, lectus.
+                            <h2 class="text-dark-brown font-bold">Zo past de nappie altijd</h2>
+                            <p class="text-link-brown">Massa turpis mauris sed et dictumst posuere ut adipiscing id. Ut ipsum amet, amet, massa lacus eget sit sed quisque. At semper lectus venenatis, et.
                             </p>
                         </div>
                     </div>
                 </div>
 
+                <!-- card 3 -->
+                <div id="card-article2" class="flex flex-col  w-100">
+                    <div id="img-container">
+                        <img src="assets/nappies.png" id="img-baby" alt="wetbag">
+                    </div>
+                    <div id="description" class="bg-beige p-6 rounded-b-lg">
+                        <div id="category">
+                            <p class="text-brown font-semibold">Tips & Tricks <span class="text-xs text-brown">&#9679;</span><span id="date"> 05 november 2021
+                    2021</span></p>
+                        </div>
+                        <div id="text-container">
+                            <h2 class="text-dark-brown font-bold">Wat is het verschil tussen Full time & Part time?</h2>
+                            <p class="text-link-brown">Aliquam a adipiscing nisl nisi, eget ullamcorper turpis ornare gravida. Eu porttitor molestie nisl scelerisque nisl, cras ornare donec. Ut lobortis elementum scelerisque odio viverra cras amet, sapien eget.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -111,28 +134,28 @@
         </div>
         <div class="links">
             <div class="py-4">
-                <div class="w-12/12 mr-3 ml-3 border-t border-border-gray"></div>
+                <div class="w-12/12 mr-3 ml-3 border-t border-hr-footer-brown"></div>
             </div>
-            <p class="text-dark-brown text-center"><a href="">Shop</a> </p>
+            <p class="text-dark-brown text-center font-semibold text-sm"><a href="">Shop</a> </p>
             <div class="py-4">
-                <div class="w-12/12 mr-3 ml-3 border-t border-border-gray"></div>
+                <div class="w-12/12 mr-3 ml-3 border-t border-hr-footer-brown"></div>
             </div>
-            <p class="text-dark-brown text-center"><a href="">Hulp & Advies</a> </p>
+            <p class="text-dark-brown text-center font-semibold text-sm"><a href="">Hulp & Advies</a> </p>
 
             <div class="py-4">
-                <div class="w-12/12 mr-3 ml-3 border-t border-border-gray"></div>
+                <div class="w-12/12 mr-3 ml-3 border-t border-hr-footer-brown"></div>
             </div>
-            <p class="text-dark-brown text-center"><a href="">Snel regelen</a> </p>
+            <p class="text-dark-brown text-center font-semibold text-sm"><a href="">Snel regelen</a> </p>
 
             <div class="py-4">
-                <div class="w-12/12 mr-3 ml-3 border-t border-border-gray"></div>
+                <div class="w-12/12 mr-3 ml-3 border-t border-hr-footer-brown"></div>
             </div>
-            <p class="text-dark-brown text-center"><a href="">Over ons</a> </p>
+            <p class="text-dark-brown text-center font-semibold text-sm"><a href="">Over ons</a> </p>
 
             <div class="py-4">
-                <div class="w-12/12 mr-3 ml-3 border-t border-border-gray"></div>
+                <div class="w-12/12 mr-3 ml-3 border-t border-hr-footer-brown"></div>
             </div>
-            <p class="text-dark-brown text-left"> &copy; Happy Naps – 2021</p>
+            <p class="text-brown text-left text-xs font-semibold"> &copy; Happy Naps – 2021</p>
 
         </div>
 
@@ -142,13 +165,8 @@
 
 </body>
 
-</html>
 
 
 
-
-</footer>
-
-</body>
 
 </html>
