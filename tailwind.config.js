@@ -22,15 +22,9 @@ module.exports = {
                 '300': '100%',
                 '400': '400px',
             },
-            gap: {
 
-                '400': '400px',
-            },
-            gridTemplateColumns: {
-                // Simple 16 column grid
-                '16': 'repeat(2, minmax(3, 1fr))',
 
-            },
+
             fontFamily: {
                 'sans': 'DM Sans',
 
